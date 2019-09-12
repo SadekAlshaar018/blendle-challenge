@@ -8,7 +8,7 @@ export default class singlePost extends Component {
   render(){
     return(
       <li className="list-item" key={this.props.item.id}>
-        <a href={`https://www.reddit.com/${this.props.item.permalink}`} target="_blank">
+        <a href={`https://www.reddit.com${this.props.item.permalink}`} target="_blank">
           <h3 className="list-item_title main-color title">{this.props.item.title}</h3>
         </a>
         <div className="list-item_score">
