@@ -62,7 +62,7 @@ export default class App extends Component {
                 render={props => <Home data={this.state.data}/>}
               />
             </Switch>
-         : <div><h1>Loading...</h1></div>}
+         : <div className="spinner"><div className="lds-ripple"><div></div><div></div><div></div><div></div></div></div>}
          </div>
       </div>
     );
