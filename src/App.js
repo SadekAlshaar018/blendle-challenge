@@ -42,17 +42,6 @@ export default class App extends Component {
 
    sortArray(a, b) {
       return b.data.score-a.data.score
-    // const scoreA = a.score;
-    // const scoreB = b.score;
-
-    // let defaultScor = 0;
-
-    // if (scoreA < scoreB) {
-    //   defaultScor = 1;
-    // }else if (scoreA > scoreB) {
-    //   defaultScor = -1;
-    // }
-    // return defaultScor;
   }
   render(){
     return (
@@ -69,7 +58,7 @@ export default class App extends Component {
                   )
                 ]}/>}
                 />
-              <Route  path='/' 
+              <Route  path='/'
                 render={props => <Home data={this.state.data}/>}
               />
             </Switch>
