@@ -105,6 +105,7 @@ a{
 
 .post__page{
   display: block;
+  margin-top: 48px;
 }
 
 .post__page-inner a{
