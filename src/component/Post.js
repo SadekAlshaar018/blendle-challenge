@@ -26,7 +26,7 @@ export default class Post extends Component {
             </div>
             <div className="post__item-title">
               <h3 className="post_title main-color title">Title</h3>
-              <span className="lightblue">{this.props.post.data.title}</span>
+              <span className="lightblue">{this.props.post.data.subreddit} ...</span>
             </div>
             <div className="post__item-description">
             <h3 className="post_title main-color title">Public description</h3>
