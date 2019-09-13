@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SinglePost from './singlePost';
+import Fade from 'react-reveal/Fade';
 import '../App.css';
 export default class Home extends Component {
 
@@ -15,7 +16,9 @@ export default class Home extends Component {
         <div className="block__posts">
             <div className="main-list">
               <ul className="main-list_list">{dataArray.map( (item, id ) =>
-              <SinglePost item={item.data} key={id}/>
+                <Fade bottom>
+                  <SinglePost item={item.data} key={id}/>
+                </Fade>
                 )}</ul>
             </div>
         </div>
