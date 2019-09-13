@@ -4,11 +4,7 @@ html { font-family: 'Inter', sans-serif; }
   html,body {
     font-family: 'Inter var', sans-serif;
     letter-spacing: -0.18px;
-
   }
-}
-*{
-  height: 100%;
 }
 /* color's  */
 .main-color{
