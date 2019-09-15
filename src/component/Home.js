@@ -18,8 +18,8 @@ export default class Home extends Component {
               <ul className="main-list_list">
                 {
                   this.props.data ? dataArray.map( (item, id ) =>
-                    <Fade bottom>
-                      <SinglePost item={item.data} key={id}/>
+                    <Fade bottom key={id}>
+                      <SinglePost item={item.data} />
                     </Fade>
                   ) : ''
                 }
