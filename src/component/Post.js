@@ -6,18 +6,17 @@ export default class Post extends Component {
 
   render() {
     const { params } = this.props
-    console.log(params);
+    console.log(params, 'params');
     const  formatNum = (num) => {
       return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
     }
-    console.log(this.props);
 
     return (
       <div className="post__page">
         <div className="post__page-inner">
-          <Link to={`/`}>
+          <a href={`/`}>
             <img src={Back} alt="" />
-          </Link>
+          </a>
         </div>
         <div className="post__item" key={this.props.post.data.id}>
             <div className="post__item-details">

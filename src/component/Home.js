@@ -15,11 +15,15 @@ export default class Home extends Component {
         </div>
         <div className="block__posts">
             <div className="main-list">
-              <ul className="main-list_list">{dataArray.map( (item, id ) =>
-                <Fade bottom>
-                  <SinglePost item={item.data} key={id}/>
-                </Fade>
-                )}</ul>
+              <ul className="main-list_list">
+                {
+                  this.props.data ? dataArray.map( (item, id ) =>
+                    <Fade bottom>
+                      <SinglePost item={item.data} key={id}/>
+                    </Fade>
+                  ) : ''
+                }
+              </ul>
             </div>
         </div>
       </div>

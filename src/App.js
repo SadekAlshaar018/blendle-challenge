@@ -26,7 +26,7 @@ export default class App extends Component {
         for(var i=0; i<newdata.length; i++){
           postIndex[i]= newdata[i].data.id;
         };
-        console.log(postIndex);
+        // console.log(postIndex);
 
         this.setState({
           data: newdata,
